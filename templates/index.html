@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title> First Web app </title>
+</head>
+<body>
+    <h1> Home Page </h1>
+    {{Key1}}
+    <br></br>
+    <a href= "{% url 'result' %}"> CLICH HERE FOR RESULT </a>
+    <br></br>
+    <form action="{% url 'result' %}">
+
+        {% csrf_token %}
+        <textarea cols="50" rows="20" name="article"></textarea>
+        <br></br>
+        <input type="submit" name="Enter">
+
+    </form>
+</body>
+</html>

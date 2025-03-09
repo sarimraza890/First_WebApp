@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title> First Web app </title>
+</head>
+<body>
+    <h1> Result Page </h1>
+    <a href= "{% url 'home' %}"> CLICH HERE FOR HOME </a>
+    <br></br>
+    {{art}}
+    <h1> This article has {{count}} words </h1>
+    <br></br>
+    {% for word,count in sorted %}
+
+    <h1> {{word}} : {{count}} </h1>
+    
+    {% endfor %}
+    
+</body>
+</html>
